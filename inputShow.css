@@ -1,0 +1,44 @@
+/* sector05 */
+#sector05 {position:relative; width:100%; padding:114px 0 0 0;}
+#sector05:after {content:""; display:block; clear:both;} 
+#sector05 .searchSchool {position:relative; width:840px; margin:0 auto;}
+#sector05 .searchSchool .inwrap {width:0; overflow:hidden;}
+#sector05 .searchSchool .adTxt {position:absolute; left:80px; top:-36px; font-size:18px; color:#2f363e; letter-spacing:-1px; opacity:0;}
+#sector05 .searchSchool .sSearch {position:relative; padding:0 132px 0 0; background:#e5e5e5; border-radius:130px; overflow:hidden;}
+#sector05 .searchSchool .sSearch input {width:100%; height:130px; line-height:130px; font-size:44px; color:#2f363e; letter-spacing:-3px; padding:0 0 0 80px; background:#e5e5e5; border:0; box-sizing:border-box;}
+#sector05 .searchSchool .sSearch input::-webkit-input-placeholder { /* WebKit, Blink, Edge */color:#2f363e;}
+#sector05 .searchSchool .sSearch input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */color:#2f363e; opacity:1;}
+#sector05 .searchSchool .sSearch input::-moz-placeholder { /* Mozilla Firefox 19+ */color:#2f363e; opacity:1;}
+#sector05 .searchSchool .sSearch input::-ms-input-placeholder { /* Internet Explorer 10-11 */color:#2f363e;}
+#sector05 .searchSchool .sSearch a {position:absolute; right:0; top:0; display:inline-block; width:130px; height:130px; background:#2f363e; border:0; border-radius:100%;}
+#sector05 .searchSchool .sSearch a span {display:inline-block; width:100%; padding:43px 0 0 0; text-align:center;}
+
+
+
+/***************** media **************/
+@media all and (max-width:840px){
+	/* sector05 */
+	#sector05 .searchSchool {width:auto; margin:0 40px;}
+	#sector05 .searchSchool .adTxt {left:58px;}
+	#sector05 .searchSchool .sSearch {padding:0 100px 0 0;}
+	#sector05 .searchSchool .sSearch input {font-size:38px; padding:0 0 0 55px; height:100px; line-height:100px;}
+	#sector05 .searchSchool .sSearch a {width:100px; height:100px;}
+	#sector05 .searchSchool .sSearch a span {padding:28px 0 0 0;}
+}
+
+
+
+/***************** mobile **************/
+@media all and (max-width:640px){
+
+/* sector05 */
+#sector05 {padding:48px 0 0 0;}
+#sector05 .searchSchool {margin:0 20px;}
+#sector05 .searchSchool .adTxt {left:30px; top:-24px; font-size:13px;}
+#sector05 .searchSchool .sSearch {padding:0 72px 0 0;}
+#sector05 .searchSchool .sSearch input {font-size:20px; padding:0 0 0 30px; height:70px; line-height:70px;}
+#sector05 .searchSchool .sSearch a {width:70px; height:70px;}
+#sector05 .searchSchool .sSearch a span {padding:22px 0 0 0;}
+#sector05 .searchSchool .sSearch a span img {width:26px;}
+
+}
