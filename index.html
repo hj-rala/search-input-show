@@ -1,0 +1,97 @@
+
+<link rel="stylesheet" type="text/css" href="inputShow.css" />
+
+<script type="text/javascript" src="../placeholderTypewriter.js"></script>
+<script type="text/javascript" src="../transit.js"></script>
+<script type="text/javascript" src="../waypoints.min.js"></script>
+
+
+
+
+
+
+
+
+<!-- sector05 -->
+<div id="sector05">
+	<div class="searchSchool">
+		<div class="inwrap">
+			<div class="adTxt">스마트 매장의 학교명을 검색해 보세요.</div>
+			<div class="sSearch">
+				<input type="text" />
+				<a href="javascript:;"><span><img src="http://smartzzang.com/2020SS/images/btn/btn_s_search_btn.png" alt="" /></span></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- sector05 -->
+
+
+
+
+
+
+
+
+
+
+
+
+$(function(){
+
+	// sector05 act
+	var pFlag = true ;
+	var m5 = function(a){
+
+		$('#'+a+' .inwrap').delay(400).animate({'width':'100%'},1200,function(){
+			$('#'+a+' .adTxt').delay(400).animate({'opacity':'1'},600);
+			
+			var placeholderText = [
+			"학교명을 검색해 보세요.",
+			"브랜드파워 스마트교복", 
+			"편안함도 스타일이다."
+			];
+	
+			$('.sSearch input').placeholderTypewriter({
+				text: placeholderText,
+				//delay:100,
+				pause:2000, //중지
+				//holdOnceWritten: 100,
+				//holdOnceDeleted: 100
+			});
+
+		});
+
+		$('#'+a+' .sSearch a').delay(400).transition({rotate:'720deg'},1200);
+
+	}
+
+
+	// way point
+	$('div[id^=sector]').waypoint(function() {
+		var sectorNum = $(this).attr('id');
+		var depNum = parseInt(sectorNum.substr(7,8));
+		switch (depNum) {
+		  case 1 :
+			//m1(sectorNum);
+		  break;
+		  case 2 :
+			//m2(sectorNum);
+		  break;
+		  case 3 :
+			//m3(sectorNum);
+		  break;
+		  case 4 :
+			//m4(sectorNum);
+		  break;
+		  case 5 :
+			m5(sectorNum);
+		  break;
+		  default :				
+		  break;
+		}
+	}, { offset: '70%' });
+	
+	
+
+});
